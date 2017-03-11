@@ -68,6 +68,7 @@
 		DD0690E31E7398CD00986688 /* JLSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JLSecondViewController.m; path = Main/JLSecondViewController.m; sourceTree = "<group>"; };
 		DD0690E51E73990100986688 /* JLThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JLThirdViewController.h; path = Main/JLThirdViewController.h; sourceTree = "<group>"; };
 		DD0690E61E73990100986688 /* JLThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JLThirdViewController.m; path = Main/JLThirdViewController.m; sourceTree = "<group>"; };
+		DD0690E81E73ADAF00986688 /* JLGlobal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JLGlobal-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +140,7 @@
 				DD0690B01E737F4D00986688 /* LaunchScreen.storyboard */,
 				DD0690B31E737F4D00986688 /* Info.plist */,
 				DD0690DE1E738F5C00986688 /* JLGlobalMacro.h */,
+				DD0690E81E73ADAF00986688 /* JLGlobal-Prefix.pch */,
 				DD0690A21E737F4D00986688 /* Supporting Files */,
 			);
 			path = JLUnivalProject;
@@ -523,6 +525,7 @@
 			baseConfigurationReference = 83B90EFC36269CE78D2CF6A8 /* Pods-JLUnivalProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JLUnivalProject/JLGlobal-Prefix.pch";
 				INFOPLIST_FILE = JLUnivalProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -536,6 +539,7 @@
 			baseConfigurationReference = D5B90540CB1F1C6A910353C4 /* Pods-JLUnivalProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JLUnivalProject/JLGlobal-Prefix.pch";
 				INFOPLIST_FILE = JLUnivalProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

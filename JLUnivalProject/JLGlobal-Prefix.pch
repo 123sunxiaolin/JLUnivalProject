@@ -1,0 +1,14 @@
+//
+//  JLGlobal-Prefix.pch
+//  JLUnivalProject
+//
+//  Created by Sunxiaolin on 17/3/11.
+//  Copyright © 2017年 com.jack.lin. All rights reserved.
+//
+
+#ifndef JLGlobal_Prefix_pch
+#define JLGlobal_Prefix_pch
+
+#import "JLGlobalMacro.h"
+
+#endif /* JLGlobal_Prefix_pch */

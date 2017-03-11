@@ -9,6 +9,15 @@
 #ifndef JLGlobalMacro_h
 #define JLGlobalMacro_h
 
+#pragma mark - ColorMacro
+
+#define HexColor(rgb) HexColorFromRGBA(rgb, 1.0)
+
+#define HexColorFromRGBA(rgb, alpha) [UIColor \
+colorWithRed:((float)((rgb & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgb & 0x00FF00) >> 8))/255.0 \
+blue:((float)(rgb & 0x0000FF))/255.0 \
+alpha:alpha]
 
 #pragma mark - Main Thread 主线程
 

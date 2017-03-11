@@ -10,4 +10,9 @@
 
 @implementation JLFIrstViewController
 
+- (void)viewDidLoad{
+    [super viewDidLoad];
+    self.view.backgroundColor = [UIColor orangeColor];
+}
+
 @end

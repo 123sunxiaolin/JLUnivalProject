@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  JLSecondViewController.h
 //  JLUnivalProject
 //
 //  Created by Sunxiaolin on 17/3/11.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface JLSecondViewController : UIViewController
 
-- (void)onTestBlock:(void(^)())successBlock;
 @end
-

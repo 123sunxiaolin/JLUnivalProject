@@ -6,13 +6,13 @@
 //  Copyright © 2017年 com.jack.lin. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "JLAppDelegate.h"
 
-@interface AppDelegate ()
+@interface JLAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation JLAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

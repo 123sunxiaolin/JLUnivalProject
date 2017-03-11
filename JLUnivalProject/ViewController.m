@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "JLGlobalMacro.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    void (^testBlock)() = ^{
+        NSLog(@"test: %s", __func__);
+    };
+    dispatch_async_main_safe(testBlock)
+    
+    
+}
+- (void)onTestBlock:(void(^)())successBlock{
+    if (successBlock) {
+        successBlock();
+    }
 }
 
 - (void)didReceiveMemoryWarning {

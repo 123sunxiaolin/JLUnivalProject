@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  JLTabBarViewController.h
 //  JLUnivalProject
 //
 //  Created by Sunxiaolin on 17/3/11.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface JLTabBarViewController : UITabBarController
 
-- (void)onTestBlock:(void(^)())successBlock;
++ (instancetype)instance;
+
 @end
-

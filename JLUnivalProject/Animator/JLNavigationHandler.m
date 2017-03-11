@@ -7,6 +7,7 @@
 //
 
 #import "JLNavigationHandler.h"
+#import "JLNavigationAnimator.h"
 
 @interface JLNavigationHandler()<UIGestureRecognizerDelegate>
 /**
@@ -17,6 +18,10 @@
  *  负责动画、交互的类
  */
 @property (nonatomic, strong) UIPercentDrivenInteractiveTransition *interaction;
+/**
+ *  处理自定义动画对象
+ */
+@property (nonatomic, strong) JLNavigationAnimator *animator;
 
 @end
 

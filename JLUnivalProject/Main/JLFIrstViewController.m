@@ -10,8 +10,10 @@
 
 @implementation JLFIrstViewController
 
+#pragma mark - life Cycle
 - (void)viewDidLoad{
     [super viewDidLoad];
+    self.title = @"Jacklin";
     self.view.backgroundColor = [UIColor orangeColor];
 }
 

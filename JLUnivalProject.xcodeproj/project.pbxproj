@@ -20,6 +20,8 @@
 		DD0690E11E73986900986688 /* JLFIrstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0690E01E73986900986688 /* JLFIrstViewController.m */; };
 		DD0690E41E7398CD00986688 /* JLSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0690E31E7398CD00986688 /* JLSecondViewController.m */; };
 		DD0690E71E73990100986688 /* JLThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0690E61E73990100986688 /* JLThirdViewController.m */; };
+		DD0690EC1E74046200986688 /* JLNavigationAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0690EB1E74046200986688 /* JLNavigationAnimator.m */; };
+		DD0690EF1E74377900986688 /* JLNavigationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0690EE1E74377900986688 /* JLNavigationHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,10 @@
 		DD0690E51E73990100986688 /* JLThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JLThirdViewController.h; path = Main/JLThirdViewController.h; sourceTree = "<group>"; };
 		DD0690E61E73990100986688 /* JLThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JLThirdViewController.m; path = Main/JLThirdViewController.m; sourceTree = "<group>"; };
 		DD0690E81E73ADAF00986688 /* JLGlobal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JLGlobal-Prefix.pch"; sourceTree = "<group>"; };
+		DD0690EA1E74046200986688 /* JLNavigationAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JLNavigationAnimator.h; path = Animator/JLNavigationAnimator.h; sourceTree = "<group>"; };
+		DD0690EB1E74046200986688 /* JLNavigationAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JLNavigationAnimator.m; path = Animator/JLNavigationAnimator.m; sourceTree = "<group>"; };
+		DD0690ED1E74377900986688 /* JLNavigationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JLNavigationHandler.h; path = Animator/JLNavigationHandler.h; sourceTree = "<group>"; };
+		DD0690EE1E74377900986688 /* JLNavigationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JLNavigationHandler.m; path = Animator/JLNavigationHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,7 @@
 				DD0690A61E737F4D00986688 /* JLAppDelegate.m */,
 				DD0690A81E737F4D00986688 /* ViewController.h */,
 				DD0690A91E737F4D00986688 /* ViewController.m */,
+				DD0690E91E73F19300986688 /* Animator */,
 				DD0690DD1E738E7A00986688 /* Main */,
 				DD0690AB1E737F4D00986688 /* Main.storyboard */,
 				DD0690AE1E737F4D00986688 /* Assets.xcassets */,
@@ -185,6 +192,17 @@
 				DD0690E61E73990100986688 /* JLThirdViewController.m */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		DD0690E91E73F19300986688 /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				DD0690EA1E74046200986688 /* JLNavigationAnimator.h */,
+				DD0690EB1E74046200986688 /* JLNavigationAnimator.m */,
+				DD0690ED1E74377900986688 /* JLNavigationHandler.h */,
+				DD0690EE1E74377900986688 /* JLNavigationHandler.m */,
+			);
+			name = Animator;
 			sourceTree = "<group>";
 		};
 		F2E3C675BD8CD0E222686038 /* Pods */ = {
@@ -379,8 +397,10 @@
 			files = (
 				DD0690E41E7398CD00986688 /* JLSecondViewController.m in Sources */,
 				DD0690DC1E738E6900986688 /* JLTabBarViewController.m in Sources */,
+				DD0690EC1E74046200986688 /* JLNavigationAnimator.m in Sources */,
 				DD0690AA1E737F4D00986688 /* ViewController.m in Sources */,
 				DD0690A71E737F4D00986688 /* JLAppDelegate.m in Sources */,
+				DD0690EF1E74377900986688 /* JLNavigationHandler.m in Sources */,
 				DD0690A41E737F4D00986688 /* main.m in Sources */,
 				DD0690E11E73986900986688 /* JLFIrstViewController.m in Sources */,
 				DD0690E71E73990100986688 /* JLThirdViewController.m in Sources */,

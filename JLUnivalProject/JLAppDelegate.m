@@ -8,6 +8,7 @@
 
 #import "JLAppDelegate.h"
 #import "JLTabBarViewController.h"
+#import "JLFIrstViewController.h"
 
 @interface JLAppDelegate ()
 
@@ -19,8 +20,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    JLTabBarViewController *tabBarVC = [[JLTabBarViewController alloc] init];
-    self.window.rootViewController = tabBarVC;
+    JLFIrstViewController *firstViewController = [[JLFIrstViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:firstViewController];
+    self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     return YES;
 }

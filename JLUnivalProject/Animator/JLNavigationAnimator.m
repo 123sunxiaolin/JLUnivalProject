@@ -29,15 +29,30 @@
     /**
      *  执行动画，让fromViewControler移动到屏幕的最右侧
      */
+    [self animateStart];
     [UIView animateWithDuration:duration animations:^{
         fromViewController.view.transform = CGAffineTransformMakeTranslation([UIScreen mainScreen].bounds.size.width, 0);
     } completion:^(BOOL finished) {
         /**
          *  当你的动画执行完成，这个方法必须要调用，否则系统会认为你的其余任何操作都在动画执行过程中。
          */
-        [transitionContext completeTransition:!transitionContext.transitionWasCancelled];
+        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
+        [self animateEnd];
     }];
     
+}
+
+#pragma mark - Private
+- (void)animateStart{
+    if (self.animatorDelegate && [self.animatorDelegate respondsToSelector:@selector(animateWillStart:)]) {
+        [self.animatorDelegate animateWillStart:self];
+    }
+}
+
+- (void)animateEnd{
+    if (self.animatorDelegate && [self.animatorDelegate respondsToSelector:@selector(animateDidEnd:)]) {
+        [self.animatorDelegate animateDidEnd:self];
+    }
 }
 
 @end

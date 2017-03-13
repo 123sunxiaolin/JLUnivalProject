@@ -10,5 +10,6 @@
 #define JLGlobal_Prefix_pch
 
 #import "JLGlobalMacro.h"
+#import <Masonry.h>
 
 #endif /* JLGlobal_Prefix_pch */

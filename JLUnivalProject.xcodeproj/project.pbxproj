@@ -22,6 +22,8 @@
 		DD0690E71E73990100986688 /* JLThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0690E61E73990100986688 /* JLThirdViewController.m */; };
 		DD0690EC1E74046200986688 /* JLNavigationAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0690EB1E74046200986688 /* JLNavigationAnimator.m */; };
 		DD0690EF1E74377900986688 /* JLNavigationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0690EE1E74377900986688 /* JLNavigationHandler.m */; };
+		DD1509591E74E570008DE8A4 /* JLTestDirectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1509581E74E570008DE8A4 /* JLTestDirectionDelegate.m */; };
+		DD15095C1E74E80F008DE8A4 /* JLTestAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = DD15095B1E74E80F008DE8A4 /* JLTestAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,10 @@
 		DD0690EB1E74046200986688 /* JLNavigationAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JLNavigationAnimator.m; path = Animator/JLNavigationAnimator.m; sourceTree = "<group>"; };
 		DD0690ED1E74377900986688 /* JLNavigationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JLNavigationHandler.h; path = Animator/JLNavigationHandler.h; sourceTree = "<group>"; };
 		DD0690EE1E74377900986688 /* JLNavigationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JLNavigationHandler.m; path = Animator/JLNavigationHandler.m; sourceTree = "<group>"; };
+		DD1509571E74E570008DE8A4 /* JLTestDirectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JLTestDirectionDelegate.h; path = Main/JLTestDirectionDelegate.h; sourceTree = "<group>"; };
+		DD1509581E74E570008DE8A4 /* JLTestDirectionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JLTestDirectionDelegate.m; path = Main/JLTestDirectionDelegate.m; sourceTree = "<group>"; };
+		DD15095A1E74E80F008DE8A4 /* JLTestAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JLTestAnimator.h; path = Main/JLTestAnimator.h; sourceTree = "<group>"; };
+		DD15095B1E74E80F008DE8A4 /* JLTestAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JLTestAnimator.m; path = Main/JLTestAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +196,10 @@
 				DD0690E31E7398CD00986688 /* JLSecondViewController.m */,
 				DD0690E51E73990100986688 /* JLThirdViewController.h */,
 				DD0690E61E73990100986688 /* JLThirdViewController.m */,
+				DD15095A1E74E80F008DE8A4 /* JLTestAnimator.h */,
+				DD15095B1E74E80F008DE8A4 /* JLTestAnimator.m */,
+				DD1509571E74E570008DE8A4 /* JLTestDirectionDelegate.h */,
+				DD1509581E74E570008DE8A4 /* JLTestDirectionDelegate.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -401,9 +411,11 @@
 				DD0690AA1E737F4D00986688 /* ViewController.m in Sources */,
 				DD0690A71E737F4D00986688 /* JLAppDelegate.m in Sources */,
 				DD0690EF1E74377900986688 /* JLNavigationHandler.m in Sources */,
+				DD1509591E74E570008DE8A4 /* JLTestDirectionDelegate.m in Sources */,
 				DD0690A41E737F4D00986688 /* main.m in Sources */,
 				DD0690E11E73986900986688 /* JLFIrstViewController.m in Sources */,
 				DD0690E71E73990100986688 /* JLThirdViewController.m in Sources */,
+				DD15095C1E74E80F008DE8A4 /* JLTestAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

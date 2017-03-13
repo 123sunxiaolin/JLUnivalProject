@@ -8,6 +8,9 @@
 
 #import "JLNavigationAnimator.h"
 
+@interface JLNavigationAnimator()
+
+@end
 @implementation JLNavigationAnimator
 
 - (NSTimeInterval)transitionDuration:(nullable id <UIViewControllerContextTransitioning>)transitionContext{

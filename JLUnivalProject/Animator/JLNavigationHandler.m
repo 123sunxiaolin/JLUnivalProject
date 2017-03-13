@@ -35,16 +35,17 @@
 - (instancetype)initWithNavigationController:(UINavigationController *)navigationController{
     self = [super init];
     if (self) {
-        _navigationController = navigationController;
         _recognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
         _recognizer.delegate = self;
         _recognizer.delaysTouchesBegan = NO;
-        [_navigationController.view addGestureRecognizer:_recognizer];
+        [navigationController.view addGestureRecognizer:_recognizer];
         
         /**
          *  暂时不知道具体作用
          */
         self.animator = [[JLNavigationAnimator alloc] init];
+        self.animator.animatorDelegate = self;
+        _navigationController = navigationController;
     }
     return self;
 }
@@ -71,7 +72,6 @@
                 //左侧 一半范围内
                 self.interaction = [[UIPercentDrivenInteractiveTransition alloc] init];
                 [self.navigationController popViewControllerAnimated:YES];
-                
             }
         }
             break;
@@ -100,6 +100,7 @@
 
 #pragma mark - UINavigationControllerDelegate
 - (nullable id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController                                   interactionControllerForAnimationController:(id <UIViewControllerAnimatedTransitioning>) animationController{
+    
     return self.interaction;
 }
 

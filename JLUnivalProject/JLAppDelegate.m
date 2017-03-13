@@ -9,6 +9,7 @@
 #import "JLAppDelegate.h"
 #import "JLTabBarViewController.h"
 #import "JLFIrstViewController.h"
+#import "JLNavigationHandler.h"
 
 @interface JLAppDelegate ()
 
@@ -22,6 +23,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     JLFIrstViewController *firstViewController = [[JLFIrstViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:firstViewController];
+    JLNavigationHandler *handler = [[JLNavigationHandler alloc] initWithNavigationController:nav];
+    nav.delegate = handler;
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     return YES;

@@ -15,7 +15,6 @@
         NSLog(@"123");
     }
     return self;
-    123
 
 }
 @end

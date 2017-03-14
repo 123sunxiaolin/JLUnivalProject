@@ -9,13 +9,6 @@
 #import "JLTestAnimator.h"
 
 @implementation JLTestAnimator
-
-- (instancetype)init{
-    
-    if (self = [super init]) {
-        NSLog(@"123");
-    }
-    return self;
+- (void)init{
 }
-
 @end
